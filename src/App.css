@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color:#1d1d1d;
+    color: white;
+    
+}
+#main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top:7vw ;
+    gap: 2vw;
+    
+
+}
+@media (max-width: 600px ){
+    #main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top:7vw ;
+        gap: 5vw;
+
+    }
+    
+}
+#form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2vw;
+    width: 23vw;
+    height: 25vw;
+    /* border: 1px solid red; */
+    background-color: #292a2b;
+    border-radius: 2vw;
+    font-size: 1.5vw;
+}
+#form > input{
+    width: 20vw;
+    height: 2vw;
+    border-radius: 2px;
+    padding-left: 10px;
+    /* border: 2px solid rgba(3, 189, 246, 0.97); */
+    font-size: 1vw;
+
+}
+#btn{
+    width: 15vw;
+    height: 2vw;
+    border-radius: 2px;
+    text-align: center;
+    background-color: rgba(3, 189, 246, 0.97);
+    border: 2px solid white;
+    font-size: 1vw;
+
+}
+#btn:hover{
+    background-color: black;
+    color: #fff;
+    cursor: pointer;
+}
+#qr{
+    font-size: 1vw;
+    width: 17vw;
+    height: 24vw;
+    /* border: 1px solid rgb(0, 254, 13); */
+    background-color: #fff;
+    border-radius: .5vw;
+    color: #000;
+    text-align: center;
+    padding: 1vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+
+
+}
+
+#loader{
+    width: 4vw;
+    height: 4vw;
+    /* background-color: #917f7f; */
+    border-radius: 50%;
+    border: solid red .5vw;
+    border-top: rgb(255, 255, 255) 6px solid;
+    animation:rotate 1s infinite ;
+    
+    position: absolute;
+    top: 40%;
+    left: 37%;
+    display: none;
+
+}
+
+@keyframes rotate{
+    0%{
+        rotate: 0deg;
+    }
+    100%{
+        rotate: 360deg;
+    }
+}
+
+
+/* #qrimg{
+  border: 3px solid rgba(3, 189, 246, 0.97);
+} */
+#btn2{
+    width: 15vw;
+    height: 2vw;
+    border-radius: 2px;
+    text-align: center;
+    background-color: rgba(3, 189, 246, 0.97);
+    border: 2px solid white;
+    color: black;
+    font-size: 1.3vw;
+    margin-top: 1vw;
+    display: none;
+    text-decoration: none;
+    
+}
+#btn2:hover{
+    background-color: black;
+    color: #fff;
+    cursor: pointer;
+}
